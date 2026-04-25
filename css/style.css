@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+main {
+  max-width: 650px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  margin: 6px 0;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: 0.2s ease;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.link:hover {
+  background: #ffffff;
+  color: #0f0f0f;
+}
+
+.link svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  fill: currentColor;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  color: #0f0f0f;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  bottom: 40px;
+}
